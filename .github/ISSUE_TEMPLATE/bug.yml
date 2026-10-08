@@ -1,0 +1,29 @@
+name: 동작 오류·문서 개선
+description: 개인정보와 환경 식별자를 뺀 재현 절차로 알려주세요.
+title: "[개선] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        공개 이슈입니다. 계정·파일 경로·호스트·토큰·개인 문서·원본 로그를 넣지 마세요.
+        오류 재현에는 새 가상 입력과 일반적인 실행 조건을 사용하세요.
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 기대 동작과 실제 동작
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 가상 입력으로 재현하기
+      description: 개인 환경을 식별할 정보 없이 필요한 실행 조건과 절차를 설명합니다.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 공개 범위 확인
+      options:
+        - label: 입력과 설명에 개인·조직·환경 식별정보, 자격 증명, 실제 문서가 없음을 검토했습니다.
+          required: true

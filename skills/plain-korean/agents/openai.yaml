@@ -1,0 +1,6 @@
+interface:
+  display_name: "담백한 한국어"
+  short_description: "불필요한 단서와 대조를 덜고 동작과 조건을 직접 씁니다"
+  default_prompt: "$plain-korean 이 글의 불필요한 단서와 대조를 줄이고 의미를 유지해 다듬어줘."
+policy:
+  allow_implicit_invocation: true
